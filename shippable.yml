@@ -1,0 +1,15 @@
+jobs:
+ - name: u14javall-test
+   type: runSh
+   steps:
+     - TASK:
+         runtime:
+           options:
+             imageName: "drydock/u14javall"
+             imageTag: master
+         script:
+           - /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java -version
+           - /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -version
+           - /usr/lib/jvm/java-9-openjdk-amd64/bin/java -version
+           - /usr/lib/jvm/java-8-oracle/bin/java -version
+           - /usr/lib/jvm/java-10-oracle/bin/java -version
