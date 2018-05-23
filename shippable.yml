@@ -8,11 +8,11 @@ jobs:
              imageName: "drydock/u14javall"
              imageTag: master
          script:
-           - /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java -version
-           - /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -version
-           - /usr/lib/jvm/java-9-openjdk-amd64/bin/java -version
-           - /usr/lib/jvm/java-8-oracle/bin/java -version
-           - /usr/lib/jvm/java-10-oracle/bin/java -version
+           - shipctl jdk set openjdk7
+           - shipctl jdk set openjdk8
+           - shipctl jdk set openjdk9
+           - shipctl jdk set oraclejdk8
+           - shipctl jdk set oraclejdk10
            - mvn --version
            - ant -version
            - gradle --version
