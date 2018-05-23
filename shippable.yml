@@ -13,3 +13,6 @@ jobs:
            - /usr/lib/jvm/java-9-openjdk-amd64/bin/java -version
            - /usr/lib/jvm/java-8-oracle/bin/java -version
            - /usr/lib/jvm/java-10-oracle/bin/java -version
+           - mvn --version
+           - ant -version
+           - gradle --version
