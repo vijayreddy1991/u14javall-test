@@ -10,7 +10,6 @@ jobs:
          script:
            - shipctl jdk set openjdk7
            - shipctl jdk set openjdk8
-           - shipctl jdk set openjdk9
            - shipctl jdk set oraclejdk8
            - shipctl jdk set oraclejdk10
            - mvn --version
